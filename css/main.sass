@@ -1,0 +1,86 @@
+///Variables de Colores 
+$base: #060a0f
+$sec: #494949
+$outline: #ff6500
+$text: transparentize($sec, 0.5)
+
+// configuraciones generales
+a 
+    margin: 0
+    padding: 0
+    @extend.tSlow
+    &:hover
+        color: $sec
+h1,h2,h3,h4,h5,h6 
+    color: $base
+p 
+    color: $sec
+
+.tSlow
+    -webkit-transition: all 0.5s ease-in-out 
+    -o-transition: all 0.5s ease-in-out
+    transition: all 0.5s ease-in-out
+.pad_100
+    padding: 100px 0
+.center
+    text-align: center
+    margin: 0px auto
+
+// Estilos barra de navegacion
+nav
+    padding: 10px 0
+    width: 100%
+    border-bottom: 1px solid transparent
+    background-color: transparentize(red, 0.4)
+    position: fixed
+    z-index: 100
+    @extend .tSlow
+    .logo
+        img 
+            width: 100%
+            @extend .tSlow
+
+    ul 
+        margin: 0px
+        margin-top: 8px
+        padding: 0px
+        text-align: right   
+        li 
+            display: inline-block
+            a 
+                text-decoration: none
+                color: $text
+                position: relative
+                padding: 0 10px
+                @extend.tSlow 
+                &:before
+                    content: ''  
+                    position: absolute
+                    width: 100%
+                    top:0
+                    left:0
+                    background-color: transparent
+                    height: 1px
+                    @extend.tSlow 
+                &:after 
+                    content: ''  
+                    position: absolute
+                    width: 0%
+                    top: 100%
+                    right: 0
+                    background-color: transparent
+                    height: 1px
+                    @extend.tSlow      
+                &:hover 
+                    text-decoration: none
+                    color: $sec
+                    &:after
+                      width: 100%
+                      background-color: black
+                    &:before
+                      width:0% 
+                      background-color: black    
+
+
+
+         
