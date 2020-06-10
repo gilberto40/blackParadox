@@ -31,7 +31,7 @@ nav
     padding: 10px 0
     width: 100%
     border-bottom: 1px solid transparent
-    background-color: transparentize(red, 0.4)
+    background-color: transparentize($base, 0.9)
     position: fixed
     z-index: 100
     @extend .tSlow
@@ -88,6 +88,12 @@ nav
                       width:0% 
                       background-color: black    
 
+////// Estilos para el Slider Slippry
+#slider
+
+    clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0% 100%, 0% 0%)
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0% 100%, 0% 0%)
+    -o-clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0% 100%, 0% 0%)
 
 
          

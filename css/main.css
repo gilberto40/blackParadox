@@ -31,7 +31,7 @@ nav {
   padding: 10px 0;
   width: 100%;
   border-bottom: 1px solid transparent;
-  background-color: rgba(255, 0, 0, 0.6);
+  background-color: rgba(6, 10, 15, 0.1);
   position: fixed;
   z-index: 100;
 }
@@ -90,4 +90,10 @@ nav ul li a:hover:after {
 nav ul li a:hover:before {
   width: 0%;
   background-color: black;
+}
+
+#slider {
+  clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
+  -o-clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
 }
