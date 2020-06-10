@@ -44,6 +44,14 @@ nav ul {
   padding: 0px;
   text-align: right;
 }
+nav ul .link-active a {
+  color: #060a0f !important;
+}
+nav ul .link-active a:after {
+  width: 100%;
+  background-color: #060a0f;
+  @extends .tSlow;
+}
 nav ul li {
   display: inline-block;
 }

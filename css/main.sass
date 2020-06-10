@@ -44,7 +44,14 @@ nav
         margin: 0px
         margin-top: 8px
         padding: 0px
-        text-align: right   
+        text-align: right 
+        .link-active
+            a 
+                color: $base !important
+                &:after
+                    width: 100%
+                    background-color: $base
+                    @extends .tSlow
         li 
             display: inline-block
             a 
