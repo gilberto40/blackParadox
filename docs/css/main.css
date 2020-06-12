@@ -62,7 +62,7 @@ button {
   background-color: transparent;
   text-transform: uppercase;
   border: 1px solid #060a0f;
-  padding: 8px 13px;
+  padding: 9px 13px;
   margin: 5px 0px;
   color: #060a0f;
   font-size: 14px;
@@ -97,7 +97,7 @@ nav {
   z-index: 100;
 }
 nav:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 nav:hover ul li a {
   color: #ff6500 !important;
@@ -169,8 +169,13 @@ nav ul li a:hover:before {
 #slippry {
   position: relative;
 }
-#slippry h1, #slippry h2, #slippry h3, #slippry h4, #slippry h5, #slippry h6, #slippry p, #slippry button, #slippry small, #slippry strong {
+#slippry h2, #slippry h3, #slippry h4, #slippry h5, #slippry h6, #slippry p, #slippry button {
   position: absolute;
+}
+#slippry h1 {
+  position: absolute;
+  color: white;
+  opacity: 0.8;
 }
 #slippry p {
   width: 600px;
@@ -191,8 +196,8 @@ nav ul li a:hover:before {
 #slippry .top_150 {
   top: 150px;
 }
-#slippry .top_225 {
-  top: 225px;
+#slippry .top_200 {
+  top: 200px;
 }
 #slippry .top_250 {
   top: 250px;
