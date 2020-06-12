@@ -25,19 +25,73 @@ p
 .center
     text-align: center
     margin: 0px auto
+// Estilos para input,select, option, text area
+input,
+select, 
+option,
+textarea 
+    width: 100%
+    padding: 10px 15px
+    border: 1px solid $base
+    margin: 5px 0px
+    opacity: .5
+    @extend .tSlow 
+    &:hover,
+    &:focus 
+        opacity: 1
+        color: $base
+textarea 
+    min-width: 100% 
+    max-width:  100%
+    min-height: 150px
+    max-height: 250px
+button 
+    background-color: transparent 
+    text-transform: uppercase
+    border: 1px solid $base
+    padding: 8px 13px
+    margin: 5px 0px
+    color: $base
+    font-size: 14px
+    letter-spacing: 1px
+    cursor: pointer
+    opacity: .7
+    @extend .tSlow
+    &:hover
+        background-color: $base
+        color: white
+        opacity: 1
+.black
+    background-color: $base
+    color: white
+    border: 1px solid $base
+    opacity: 1
+    @extend .tSlow
+    &:hover
+        background-color: $outline
+        border: 1px solid $outline
+        opacity: 1
+
 
 // Estilos barra de navegacion
 nav
     padding: 10px 0
     width: 100%
     border-bottom: 1px solid transparent
-    background-color: transparentize($base, 0.9)
+    background-color: transparent
     position: fixed
     z-index: 100
     @extend .tSlow
+    &:hover
+        background-color: transparentize(white, .8)
+        ul 
+            li 
+                a
+                    color: $outline !important
+
     .logo
         img 
-            width: 100%
+            width: 80%
             @extend .tSlow
 
     ul 
@@ -54,10 +108,11 @@ nav
                     @extends .tSlow
         li 
             display: inline-block
+            text-transform: uppercase
             a 
                 text-decoration: none
-                color: $text
                 position: relative
+                color: transparentize(white, 0.4)
                 padding: 0 10px
                 @extend.tSlow 
                 &:before
@@ -90,10 +145,31 @@ nav
 
 ////// Estilos para el Slider Slippry
 #slider
-
     clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0% 100%, 0% 0%)
     -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0% 100%, 0% 0%)
     -o-clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0% 100%, 0% 0%)
-
+#slippry
+    position: relative
+    h1,h2,h3,h4,h5,h6,p,button,small,strong
+        position: absolute
+    p 
+        width: 600px
+    .white_bg
+        background-color: transparentize(white, 0.8)
+        padding: 5px 10px
+    .left
+        left:100px
+    .right
+        right: 100px
+    .top_100
+        top: 100px
+    .top_150
+        top: 150px
+    .top_225
+        top: 225px
+    .top_250
+        top: 250px
+    .top_325
+        top: 325px
 
          
