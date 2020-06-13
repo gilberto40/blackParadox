@@ -5,6 +5,8 @@ $outline: #ff6500
 $text: transparentize($sec, 0.5)
 
 // configuraciones generales
+*
+    font-family: helvetica
 a 
     margin: 0
     padding: 0
@@ -25,6 +27,11 @@ p
 .center
     text-align: center
     margin: 0px auto
+.main-titles
+    font-size: 30px
+    font-weight: bold
+    padding: 15px 0px
+
 // Estilos para input,select, option, text area
 input,
 select, 
@@ -175,3 +182,20 @@ nav
         top: 250px
     .top_325
         top: 325px
+///estilos para esto somos
+
+// estilos para sERVICIOS
+.rounded-circle
+    width: 85%
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+    -o-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+    @extend .tSlow 
+    &:hover
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
+        -o-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
+
+.informacion
+    padding: 10px 15px
+    text-align: justify
