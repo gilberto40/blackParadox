@@ -18,7 +18,7 @@ p {
   color: #494949;
 }
 
-.tSlow, .diamante_to_circle, .services, .diamante, nav ul li a:after, nav ul li a:before, nav ul li a, nav .logo img, nav, .black, button, input,
+.tSlow, .diamante_to_circle, .services, .diamante, nav ul li a:after, nav ul li a:before, nav ul li a, nav .logo img, .black, button, input,
 select,
 option,
 textarea, a {
@@ -106,12 +106,6 @@ nav {
   position: fixed;
   z-index: 100;
 }
-nav:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-nav:hover ul li a {
-  color: #ff6500 !important;
-}
 nav .logo img {
   width: 80%;
 }
@@ -136,7 +130,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   position: relative;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
   padding: 0 10px;
 }
 nav ul li a:before {
