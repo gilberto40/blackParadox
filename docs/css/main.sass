@@ -28,7 +28,7 @@ p
     text-align: center
     margin: 0px auto
 .main-titles
-    font-size: 30px
+    font-size: 40px
     font-weight: bold
     padding: 15px 0px
 
@@ -182,11 +182,16 @@ nav
         top: 250px
     .top_325
         top: 325px
-///estilos para esto somos
-
 // estilos para sERVICIOS
-.rounded-circle
+.services
+    width: 60%
+    @extend .diamante_to_circle
+
+.diamante
     width: 85%
+    @extend .diamante_to_circle
+
+.diamante_to_circle
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
     -o-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
@@ -199,3 +204,41 @@ nav
 .informacion
     padding: 10px 15px
     text-align: justify
+
+//estilos footer
+footer 
+    color: $sec
+    padding-top: 50px 
+    background-color: $base
+    clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%)
+    -webkit-clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%)
+    -o-clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%)
+    p 
+        margin: 2px 0
+    .white
+        color: white
+        hr 
+            background-color: white
+            margin-top: 10px
+            margin-bottom: 10px
+    ul 
+        padding: 0
+        margin: 0
+        li 
+            display: block
+            text-decoration: none
+.fotos_footer
+    display: flex 
+    flex-wrap: wrap
+.tumblr
+    width: 20% 
+    opacity: 0.3
+    &:hover
+        opacity: 1
+.red-social
+    display: flex 
+    justify-content: flex-start
+
+    li 
+        padding: 0 5px
+

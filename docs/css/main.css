@@ -18,7 +18,7 @@ p {
   color: #494949;
 }
 
-.tSlow, .rounded-circle, nav ul li a:after, nav ul li a:before, nav ul li a, nav .logo img, nav, .black, button, input,
+.tSlow, .diamante_to_circle, .services, .diamante, nav ul li a:after, nav ul li a:before, nav ul li a, nav .logo img, nav, .black, button, input,
 select,
 option,
 textarea, a {
@@ -35,7 +35,7 @@ textarea, a {
 }
 
 .main-titles {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   padding: 15px 0px;
 }
@@ -216,13 +216,20 @@ nav ul li a:hover:before {
   top: 325px;
 }
 
-.rounded-circle {
+.services {
+  width: 60%;
+}
+
+.diamante {
   width: 85%;
+}
+
+.diamante_to_circle, .services, .diamante {
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   -o-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
-.rounded-circle:hover {
+.diamante_to_circle:hover, .services:hover, .diamante:hover {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   -o-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -231,4 +238,53 @@ nav ul li a:hover:before {
 .informacion {
   padding: 10px 15px;
   text-align: justify;
+}
+
+footer {
+  color: #494949;
+  padding-top: 50px;
+  background-color: #060a0f;
+  clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%);
+  -o-clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%);
+}
+footer p {
+  margin: 2px 0;
+}
+footer .white {
+  color: white;
+}
+footer .white hr {
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+footer ul li {
+  display: block;
+  text-decoration: none;
+}
+
+.fotos_footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tumblr {
+  width: 20%;
+  opacity: 0.3;
+}
+.tumblr:hover {
+  opacity: 1;
+}
+
+.red-social {
+  display: flex;
+  justify-content: flex-start;
+}
+.red-social li {
+  padding: 0 5px;
 }
