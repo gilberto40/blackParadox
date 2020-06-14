@@ -5,9 +5,9 @@ window.addEventListener('load',()=>{
     window.onscroll = function() {
         
         if(window.scrollY > 200){
-            nav.style.backgroundColor = "rgba(255, 101, 0, 0.8)"
+            nav.classList.add('scroleo')
         }else{
-            nav.style.backgroundColor = "transparent" 
+            nav.classList.remove('scroleo')
         }
     };
 })

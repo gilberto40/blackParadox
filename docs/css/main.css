@@ -18,7 +18,7 @@ p {
   color: #494949;
 }
 
-.tSlow, .diamante_to_circle, .services, .diamante, nav ul li a:after, nav ul li a:before, nav ul li a, nav .logo img, .black, button, input,
+.tSlow, .red-social li, .diamante_to_circle, .services, .diamante, nav ul li a:after, nav ul li a:before, nav ul li a, nav .logo img, .scroleo .logo img, .black, button, input,
 select,
 option,
 textarea, a {
@@ -98,6 +98,23 @@ button:hover {
   opacity: 1;
 }
 
+.scroleo {
+  background-color: rgba(255, 101, 0, 0.97) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+.scroleo .logo img {
+  width: 60%;
+}
+.scroleo .link-active a {
+  color: white !important;
+}
+.scroleo .link-active a:after {
+  background-color: white;
+}
+.scroleo ul li a {
+  color: #060a0f !important;
+}
+
 nav {
   padding: 10px 0;
   width: 100%;
@@ -107,7 +124,7 @@ nav {
   z-index: 100;
 }
 nav .logo img {
-  width: 80%;
+  width: 85%;
 }
 nav ul {
   margin: 0px;
@@ -116,7 +133,7 @@ nav ul {
   text-align: right;
 }
 nav ul .link-active a {
-  color: #060a0f !important;
+  color: #060a0f;
 }
 nav ul .link-active a:after {
   width: 100%;
@@ -276,9 +293,49 @@ footer ul li {
 }
 
 .red-social {
-  display: flex;
-  justify-content: flex-start;
+  position: relative;
 }
 .red-social li {
+  width: 25px;
+  height: 25px;
+  margin: 0 15px;
+  float: left;
+  transform: rotate(0deg);
+  -webkit-transform: 0deg;
+  -o-transform: 0deg;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  cursor: pointer;
+}
+.red-social li i {
+  transform: rotate(0deg);
+  -webkit-transform: 0deg;
+  -o-transform: 0deg;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.red-social li:hover {
   padding: 0 5px;
+  transform: rotate(45deg);
+  -webkit-transform: 45deg;
+  -o-transform: 45deg;
+  background-color: white;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.red-social li:hover i {
+  transform: rotate(-45deg);
+  -webkit-transform: -45deg;
+  -o-transform: -45deg;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.copy a {
+  color: #ff6500;
+  text-decoration: none;
+  opacity: 0.6;
+}
+.copy a:hover {
+  opacity: 1;
 }

@@ -81,7 +81,25 @@ button
 
 
 // Estilos barra de navegacion
+
+.scroleo
+    background-color: transparentize($outline, 0.03) !important
+    border-bottom: 1px solid transparentize(black, .8 ) !important
+    .logo
+        img 
+            width: 60%
+            @extend .tSlow
+    .link-active
+        a
+            color: white !important
+            &:after
+                background-color: white
+    ul 
+        li 
+            a 
+                color: $base !important
 nav
+
     padding: 10px 0
     width: 100%
     border-bottom: 1px solid transparent
@@ -90,7 +108,7 @@ nav
     z-index: 100
     .logo
         img 
-            width: 80%
+            width: 85%
             @extend .tSlow
 
     ul 
@@ -100,7 +118,7 @@ nav
         text-align: right 
         .link-active
             a 
-                color: $base !important
+                color: $base
                 &:after
                     width: 100%
                     background-color: $base
@@ -228,9 +246,39 @@ footer
     &:hover
         opacity: 1
 .red-social
-    display: flex 
-    justify-content: flex-start
-
+    position: relative
     li 
-        padding: 0 5px
-
+        width: 25px
+        height: 25px
+        margin: 0 15px
+        float: left
+        transform: rotate(0deg)       
+        -webkit-transform: (0deg) 
+        -o-transform: (0deg)
+        backface-visibility: hidden
+        cursor: pointer
+        i
+            transform: rotate(0deg)       
+            -webkit-transform: (0deg) 
+            -o-transform: (0deg)
+            backface-visibility: hidden 
+        @extend .tSlow
+        &:hover
+            padding: 0 5px
+            transform: rotate(45deg)       
+            -webkit-transform: (45deg) 
+            -o-transform: (45deg)
+            background-color: white
+            backface-visibility: hidden 
+            i
+                transform: rotate(-45deg)       
+                -webkit-transform: (-45deg) 
+                -o-transform: (-45deg)
+                backface-visibility: hidden 
+.copy 
+    a
+        color: $outline
+        text-decoration: none
+        opacity: 0.6
+        &:hover
+            opacity: 1
