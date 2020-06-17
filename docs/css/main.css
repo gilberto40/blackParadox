@@ -18,7 +18,7 @@ p {
   color: #494949;
 }
 
-.tSlow, .red-social li, .diamante_to_circle, .services, .diamante, nav ul li a:after, nav ul li a:before, nav ul li a, nav .logo img, .scroleo .logo img, .black, button, input,
+.tSlow, .red-social li, .grid-item, .diamante_to_circle, .services, .diamante, nav ul li a:after, nav ul li a:before, nav ul li a, nav .logo img, nav, .scroleo .logo img, nav:hover .logo img, .black, button, input,
 select,
 option,
 textarea, a {
@@ -98,21 +98,21 @@ button:hover {
   opacity: 1;
 }
 
-.scroleo {
-  background-color: rgba(255, 101, 0, 0.97) !important;
+.scroleo, nav:hover {
+  background-color: rgba(255, 255, 255, 0.97) !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
 }
-.scroleo .logo img {
+.scroleo .logo img, nav:hover .logo img {
   width: 60%;
 }
-.scroleo .link-active a {
-  color: white !important;
+.scroleo .link-active a, nav:hover .link-active a {
+  color: #ff6500 !important;
 }
-.scroleo .link-active a:after {
-  background-color: white;
+.scroleo .link-active a:after, nav:hover .link-active a:after {
+  background-color: #ff6500 !important;
 }
-.scroleo ul li a {
-  color: #060a0f !important;
+.scroleo ul li a, nav:hover ul li a {
+  color: rgba(73, 73, 73, 0.5) !important;
 }
 
 nav {
@@ -179,6 +179,16 @@ nav ul li a:hover:after {
 nav ul li a:hover:before {
   width: 0%;
   background-color: black;
+}
+
+.dark .link-active a {
+  color: #ff6500;
+}
+.dark .link-active a:after {
+  background-color: #ff6500;
+}
+.dark li a {
+  color: black;
 }
 
 #slider {
@@ -249,6 +259,64 @@ nav ul li a:hover:before {
 .informacion {
   padding: 10px 15px;
   text-align: justify;
+}
+
+.grid {
+  width: 90%;
+  padding: 50px 0px;
+  margin-top: 70px;
+  margin-bottom: 400px;
+}
+
+.grid-item {
+  width: 20%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  -o-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  margin-top: -9%;
+}
+.grid-item:before {
+  pointer-events: none;
+}
+.grid-item img {
+  width: 100%;
+}
+.grid-item:nth-child(6), .grid-item:nth-child(15) {
+  margin-left: 10%;
+}
+.grid-item:hover:before {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 101, 0, 0.3);
+  background-image: url("../images/cross.png");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+#contacto {
+  width: 100%;
+  height: 100vh;
+  padding-top: 50px;
+  display: flex;
+}
+#contacto #mapa {
+  width: 66%;
+  height: 100vh;
+  background-image: url("../images/maps.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+#contacto #formulario {
+  width: 33%;
+  height: 100vh;
+  padding: 10vh 3% 3% 3%;
 }
 
 footer {
